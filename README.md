@@ -36,8 +36,17 @@ Double-click `study_buddy.pyw`.
 
 Double-click **Start Study Buddy.command**.
 
-The first time, macOS may say it's from an unidentified developer. If so, right-click (or
-Control-click) the file, choose **Open**, then click **Open** again.
+The first time, macOS may say it "could not verify" the file. Click **Done**, open
+**System Settings › Privacy & Security**, scroll to the bottom and click **Open Anyway** next to
+"Start Study Buddy.command", then confirm with your password.
+
+Use the Python from python.org, not the `python3` that comes with macOS. Apple's built-in one
+can crash with an error like `macOS 15 (1508) or later required`. You can also start Study Buddy
+from Terminal:
+
+```
+/Library/Frameworks/Python.framework/Versions/Current/bin/python3 path/to/v2_macos/study_buddy.py
+```
 
 - **Control+Option+B** shows or hides it and takes a screenshot. If another app already
   uses that shortcut, the status line at the bottom of the window shows the one it picked.
